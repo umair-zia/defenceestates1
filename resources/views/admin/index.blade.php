@@ -98,7 +98,7 @@
 														@foreach (json_decode($ad->images) as $img)
 															@if ( $loop->iteration == 1)
 																<div class="thumb-box">
-																	<figure class="thumb"><img src="{{asset('storage/properties').'/'.$img}}"  alt=""></figure>
+																	<figure class="thumb"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}"  alt=""></figure>
 																	<a href="{{ route('ads.show',['id' => $ad->id ])}}" target="_blank" class="reply-btn">View</a>
 																	<a href="{{ route('admin.updateform', ['id' => $ad->id]) }}" target="_blank" class="reply-btn">Update</a>
 																	@if($user->type == 'admin')
@@ -121,7 +121,7 @@
 															@foreach (json_decode($ad->images) as $img)
 																@if ( $loop->iteration == 1)
 																	<div class="thumb-box">	
-																		<figure class="thumb"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+																		<figure class="thumb"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
 																		<a href="{{ route('ads.show',['id' => $ad->id ])}}" target="_blank" class="reply-btn">View</a>
 																		<a href="{{ route('admin.updateform', ['id' => $ad->id]) }}" target="_blank" class="reply-btn">Update</a>
 																	</div>
@@ -148,7 +148,7 @@
 													@foreach (json_decode($ad->images) as $img)
 														@if ( $loop->iteration == 1)
 															<div class="thumb-box">	
-																<figure class="thumb"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+																<figure class="thumb"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
 																<a href="{{route('ads.show',['id' => $ad->id ])}}" target="_blank" class="reply-btn">View</a>
 															</div>
 														@endif
@@ -168,7 +168,7 @@
 															@foreach (json_decode($ad->images) as $img)
 														@if ( $loop->iteration == 1)
 															<div class="thumb-box">	
-																<figure class="thumb"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+																<figure class="thumb"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
 																<a href="{{route('ads.show',['id' => $ad->id ])}}" target="_blank" class="reply-btn">View</a>
 															</div>
 														@endif

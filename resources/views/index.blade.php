@@ -418,7 +418,7 @@
                                 @if(isset($img))
                                     <div class="image-box">
                                         <a href="{{route('ads.show',['id' => $ad->id ])}}">
-                                            <figure class="image"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+                                            <figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
                                         </a>
                                     </div>
                                 @endif
@@ -522,7 +522,7 @@
                                     @if(isset($img))
                                         <div class="image-box">
                                             <a href="{{route('ads.show',['id' => $ad->id ])}}">
-                                                <figure class="image"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+                                                <figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
                                             </a>
                                         </div>
                                     @endif
@@ -625,7 +625,7 @@
                                     @if(isset($img))
                                         <div class="image-box">
                                             <a href="{{route('ads.show',['id' => $ad->id ])}}">
-                                                <figure class="image"><img src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+                                                <figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
                                             </a>
                                         </div>
                                     @endif

@@ -89,7 +89,7 @@
                                     @foreach(json_decode($ad->images) as $img)
                                     @if(isset($img))
                                     <li>
-                                        <a href="{{asset('storage/properties').'/'.$img}}" class="lightbox-image" title="Image Caption Here"><img style="height: 510px" src="{{asset('storage/properties').'/'.$img}}" alt=""></a></li>
+                                        <a href="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" class="lightbox-image" title="Image Caption Here"><img style="height: 510px" src="{{asset('storage/properties').'/'.$img}}" alt=""></a></li>
                                     @endif
                                     @endforeach
                                 </ul>
@@ -98,7 +98,7 @@
                                     @foreach(json_decode($ad->images) as $img)
                                     @if(isset($img))
                                     <li>
-                                        <img style="height: 100px" src="{{asset('storage/properties').'/'.$img}}" alt="">
+                                        <img style="height: 100px" src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt="">
                                     </li>
                                     @endif
                                     {{-- <p>{{$img}}</p> --}}
