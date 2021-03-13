@@ -30,7 +30,7 @@
 										<div class="property-block">
 											<div class="inner-box clearfix">
 												<div class="image-box">
-													@foreach($ad->images as $index => $img)
+													@foreach($ad->images as $img)
 													<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
 													@endforeach
 												</div>
