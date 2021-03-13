@@ -55,7 +55,7 @@ class UserController extends Controller
         $user_id = auth()->user()->id;
         $user = User::find($user_id);
         if ($user->type == 'admin') {
-            $ad = ad::all()->get();
+            $ad = ad::all();
         }else{
             $ad = ad::where('user_id', $user_id )->get();
         }
