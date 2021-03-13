@@ -29,13 +29,21 @@
 										<!-- Property Block -->
 										<div class="property-block">
 											<div class="inner-box clearfix">
-												<div class="image-box">
+												{{-- <div class="image-box">
 													@foreach(json_decode($ad->images) as $img)
-													@if ( $loop->iteration == 1)
-													<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
-													@endif
+														@if ( $loop->iteration == 1)
+															<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
+														@endif
 													@endforeach
-												</div>
+												</div> --}}
+												@foreach (json_decode($ad->images) as $img)
+												@if ( $loop->iteration == 1)
+													<div class="thumb-box">	
+														<figure class="thumb"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
+														<a href="{{route('ads.show',['id' => $ad->id ])}}" target="_blank" class="reply-btn">View</a>
+													</div>
+												@endif
+											@endforeach
 												<div class="content-box">
 													<h3 style="color: #FFFFFF">{{ $ad->title }}</h3>
 													<div class="location" style="color: white;"><i class="la la-map-marker"></i > {{ $ad->adress }}</div>
