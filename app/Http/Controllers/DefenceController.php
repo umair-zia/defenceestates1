@@ -110,7 +110,7 @@ class DefenceController extends Controller
                 $image_name = Str::random(25).$image->getClientOriginalName();
                 // $name = $image->getClientOriginalName();
                 // $image->storeAs($destination_path, $image_name);
-                Storage::disk('s3')->put($image_name, file_get_contents($image));
+                Storage::disk('s3')->put($image_name, file_get_contents($image),'public');
                 $data[] = $image_name;
             }
             $ad->images = json_encode($data);
