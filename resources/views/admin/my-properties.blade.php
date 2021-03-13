@@ -30,7 +30,7 @@
 										<div class="property-block">
 											<div class="inner-box clearfix">
 												<div class="image-box">
-													@foreach (json_decode($ad->images) as $img)
+													@foreach(json_decode($ad->images) as $img)
 													@if ( $loop->iteration == 1)
 													<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
 													@endif
