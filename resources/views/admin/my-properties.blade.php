@@ -30,7 +30,7 @@
 										<div class="property-block">
 											<div class="inner-box clearfix">
 												<div class="image-box">
-													<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$ad->image1}}" alt=""></figure>
+													<figure class="image"><img src="{{$ad->image1}}" alt=""></figure>
 												</div>
 												<div class="content-box">
 													<h3 style="color: #FFFFFF">{{ $ad->title }}</h3>

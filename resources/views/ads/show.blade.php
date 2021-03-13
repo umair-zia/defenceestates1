@@ -89,7 +89,7 @@
                                     @foreach(json_decode($ad->images) as $img)
                                     @if(isset($img))
                                     <li>
-                                        <a href="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" class="lightbox-image" title="Image Caption Here"><img style="height: 510px" src="{{asset('storage/properties').'/'.$img}}" alt=""></a></li>
+                                        <a href="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" class="lightbox-image" title="Image Caption Here"><img style="height: 510px" src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></a></li>
                                     @endif
                                     @endforeach
                                 </ul>
@@ -387,7 +387,7 @@
                                     @if ( $loop->iteration == 1)
                                     <div class="post-thumb">
                                         <a href="{{route('ads.show',['id' => $ad->id ])}}">
-                                            <img src="{{asset('storage/properties').'/'.$img}}" alt="">
+                                            <img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt="">
                                             <span class="status">{{$ad->status}}</span>
                                         </a>
                                     </div>
