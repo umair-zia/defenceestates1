@@ -125,7 +125,7 @@
                                 @foreach(json_decode($ad->images) as $img)
                                 @if ( $loop->iteration == 1)
                                     @if(isset($img))
-                                        <figure class="image"><img style="height: 280px" src="{{asset('storage/properties').'/'.$img}}" alt=""></figure>
+                                        <figure class="image"><img style="height: 280px" src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
                                     @endif
                                 @endif
                                 @endforeach
