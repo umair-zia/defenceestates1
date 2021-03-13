@@ -30,7 +30,9 @@
 										<div class="property-block">
 											<div class="inner-box clearfix">
 												<div class="image-box">
-													<figure class="image"><img src="{{$ad->image1}}" alt=""></figure>
+													@foreach($ad->images as $index => $img)
+													<figure class="image"><img src="https://defenceestates1.s3.us-east-2.amazonaws.com/{{$img}}" alt=""></figure>
+													@endforeach
 												</div>
 												<div class="content-box">
 													<h3 style="color: #FFFFFF">{{ $ad->title }}</h3>
